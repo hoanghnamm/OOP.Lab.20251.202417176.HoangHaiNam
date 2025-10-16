@@ -1,6 +1,0 @@
-Score: 7/10
-Comments: Trong report:
-- Chưa trl 2 câu hỏi của B6.1
-- B6.4 ko dc nhận input full viết hoa
-- B2.2.5 thiếu TH a = 0
-- Thiếu B2.2.6
