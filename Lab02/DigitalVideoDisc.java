@@ -26,7 +26,6 @@ public class DigitalVideoDisc
         super();
         this.category=category;
     }
-
 public void setTitle(String title)
 {
     this.title = title;
