@@ -20,27 +20,7 @@ public class DigitalVideoDisc
         super();
         this.category=category;
     }
-    
-public String getTitle()
-{
-    return title;
-}
-public String getCategory()
-{
-    return category;
-}
-public String getDirector()
-{
-    return director;
-}
-public int length()
-{
-    return length;
-}
-public float getCost()
-{
-    return cost;
-}
+
 public void setTitle(String title)
 {
     this.title = title;
@@ -61,6 +41,26 @@ public void setLength(int length)
 public void setCost(float cost)
 {
     this.cost = cost;
+}  
+public String getTitle()
+{
+    return title;
+}
+public String getCategory()
+{
+    return category;
+}
+public String getDirector()
+{
+    return director;
+}
+public int length()
+{
+    return length;
+}
+public float getCost()
+{
+    return cost;
 }
 
 }

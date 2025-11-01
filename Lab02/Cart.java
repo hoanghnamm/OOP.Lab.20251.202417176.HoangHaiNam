@@ -40,4 +40,45 @@ public class Cart {
             System.out.println("Successfully removed!!!");
         }
     }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        if (qtyOrdered + dvdList.length < MAX_NUMBERS_ORDERED) {
+            for (int i = 0; i < dvdList.length; i++) {
+                itemsOrdered.add(dvdList[i]);
+            }
+            qtyOrdered++;
+            System.out.println( dvdList.length + " discs have been added successfully");
+            System.out.println("Total cost: " + totalCost());
+        }
+        if (qtyOrdered + dvdList.length > MAX_NUMBERS_ORDERED) {
+            if (qtyOrdered > MAX_NUMBERS_ORDERED) {
+                System.out.println("The cart is full!!!");
+            } 
+            else 
+            {
+                System.out.println("Can only add" + (MAX_NUMBERS_ORDERED-qtyOrdered) + " dvds more.");
+                for (int i = 0; i < dvdList.length; i++) {
+                    itemsOrdered.add(dvdList[i]);
+                }
+                qtyOrdered++;
+                System.out.println("The discs have been added");
+                System.out.println("Total cost: " + totalCost());
+            }
+        }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2)
+    {
+        if(qtyOrdered >=MAX_NUMBERS_ORDERED)
+        {
+            System.out.println("The cart is full!!!");
+        }
+        if(qtyOrdered +2 <=MAX_NUMBERS_ORDERED)
+        {
+            itemsOrdered.add(dvd1);
+            itemsOrdered.add(dvd2);
+            qtyOrdered= qtyOrdered+2;
+            System.out.println("2 discs have been added successfully");
+            System.out.println("Cost: " + totalCost());
+        }
+    }
 }
