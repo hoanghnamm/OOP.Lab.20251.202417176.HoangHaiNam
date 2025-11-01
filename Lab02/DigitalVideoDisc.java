@@ -41,7 +41,8 @@ public void setLength(int length)
 public void setCost(float cost)
 {
     this.cost = cost;
-}  
+}
+    
 public String getTitle()
 {
     return title;
