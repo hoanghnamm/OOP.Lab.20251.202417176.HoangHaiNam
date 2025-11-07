@@ -1,4 +1,6 @@
-Score: 7/10
+Score: 5/10
 Comments:
 - Ko có branch release/lab03
+- Chưa chia đúng package như file hướng dẫn
 - Chưa trl các câu hỏi
+- Thiếu GarbageCreator & NoGarbage
